@@ -6,21 +6,23 @@ public abstract class Account {
     private String email;
     private Boolean ativa = true;
 
-    private ArrayList<Movement> move;
+    private ArrayList<Movement> movementList;
+    private Movement movement;
 
     public Account(String nome, String email, boolean ativa) {
         this.nome = nome;
         this.email = email;
         this.ativa = ativa;
-        move = new ArrayList<Movement>();
+        movementList = new ArrayList<Movement>();
+        movement = new Movement();
     }
 
     public void geradorCodigo() {
         codigo++;
     }
 
-    public void addMovement(Movement m) {
-        move.add(m);
+    public void addMovement(movement) {
+        movementList.add(movement);
     }
 
     public abstract void saque(double valor);
@@ -30,7 +32,7 @@ public abstract class Account {
     @Override
     public String toString() {
         String s;
-        s = String.format("Codigo: %05d Nome: %s Email: %s Ativo %b", nome, email, codigo, ativa);
+        s = String.format("Codigo: %05d Nome: %s Email: %s Ativo %b", codigo, nome, email, ativa);
         return s;
     }
 }
