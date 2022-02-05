@@ -12,13 +12,23 @@ public class AccountLegalPerson extends Account {
 
 
     @Override
-    public void deposit(){
-
+    public void deposit(int accountId, double amount) {
+        Account account = new Bank().getAccountById(accountId);
+        if(account != null) {
+            if(account instanceof AccountLegalPerson){
+                balance += amount;
+            }
+        }
     }
 
     @Override
-    public void withdraw(){
-        
+    public void withdraw(int accountId, double amount){
+        Account account = new Bank().getAccountById(accountId);
+        if(account != null) {
+            if(account instanceof AccountLegalPerson){
+                balance -= amount;   
+            }
+        }
     }
 
     

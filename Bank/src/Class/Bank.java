@@ -21,6 +21,32 @@ public class Bank {
     }
 
     /** 
+<<<<<<< Updated upstream
+=======
+     * Esse método é responsável por inativar a conta
+     * que é passada no parâmetro.
+     * 
+     */
+    public void inactivateAccount(int accountId) {}
+
+    /** 
+     * Esse método é responsável por buscar uma conta
+     * no array de contas e retornar se ela existe ou não.
+     * 
+     * @return TRUE se a conta existir ou FALSE se a conta não
+     * existir.
+     */
+    public Account getAccountById(int accountId) {
+        for (Account account : accounts) {
+            if(account.id == accountId){
+                return account;
+            }
+        }
+        return null;
+    }
+
+    /** 
+>>>>>>> Stashed changes
      * Esse método é responsável por realizar um Saque
      * de um valor na conta que é passada no parâmetro.
      * 

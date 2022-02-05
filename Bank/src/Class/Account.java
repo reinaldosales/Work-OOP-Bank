@@ -17,9 +17,14 @@ public abstract class Account {
         this.movimentations = new ArrayList<Movimentation>();
     }
 
+<<<<<<< Updated upstream
     public abstract void withdraw();
 
     public abstract void deposit();
+=======
+    public abstract void withdraw(int accountId, double amount);
+    public abstract void deposit(int accountId, double amount);
+>>>>>>> Stashed changes
 
     /** 
      * Esse método é responsável por criar uma movimentação

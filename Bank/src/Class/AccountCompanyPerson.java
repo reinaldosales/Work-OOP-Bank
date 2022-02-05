@@ -13,13 +13,28 @@ public class AccountCompanyPerson extends Account{
     }
 
     @Override
+<<<<<<< Updated upstream
     public void deposit(){
         
+=======
+    public void deposit(int accountId, double amount) {
+        Account account = new Bank().getAccountById(accountId);
+        if(account != null) {
+            if(account instanceof AccountCompanyPerson){
+                balance += amount;
+            }
+        }
+>>>>>>> Stashed changes
     }
 
     @Override
-    public void withdraw(){
-
+    public void withdraw(int accountId, double amount){
+        Account account = new Bank().getAccountById(accountId);
+        if(account != null) {
+            if(account instanceof AccountCompanyPerson){
+                balance -= amount;   
+            }
+        }
     }
 
     /** 
