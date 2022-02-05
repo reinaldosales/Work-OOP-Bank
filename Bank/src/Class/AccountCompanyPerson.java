@@ -14,7 +14,7 @@ public class AccountCompanyPerson extends Account{
 
     @Override
     public void deposit(){
-
+        
     }
 
     @Override

@@ -21,24 +21,6 @@ public class Bank {
     }
 
     /** 
-     * Esse método é responsável por inativar a conta
-     * que é passada no parâmetro.
-     * 
-     */
-    public void inactivateAccount(int accountId) {}
-
-    /** 
-     * Esse método é responsável por buscar uma conta
-     * no array de contas e retornar se ela existe ou não.
-     * 
-     * @return TRUE se a conta existir ou FALSE se a conta não
-     * existir.
-     */
-    public boolean getAccountById(int accountId) {
-        return true;
-    }
-
-    /** 
      * Esse método é responsável por realizar um Saque
      * de um valor na conta que é passada no parâmetro.
      * 
@@ -57,6 +39,24 @@ public class Bank {
     public void deposit(int accountId, double amount) {}
 
     /** 
+     * Esse método é responsável por inativar a conta
+     * que é passada no parâmetro.
+     * 
+     */
+    public void inactivateAccount(int accountId) {}
+
+    /** 
+     * Esse método é responsável por buscar uma conta
+     * no array de contas e retornar se ela existe ou não.
+     * 
+     * @return TRUE se a conta existir ou FALSE se a conta não
+     * existir.
+     */
+    public boolean getAccountById(int accountId) {
+        return true;
+    }
+
+     /** 
      * Esse método é responsável por gerar o extrato de Saldo
      * e extrato da conta passada no parâmetro.
      * 

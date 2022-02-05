@@ -18,6 +18,7 @@ public abstract class Account {
     }
 
     public abstract void withdraw();
+
     public abstract void deposit();
 
     /** 
@@ -25,7 +26,7 @@ public abstract class Account {
      * do fluxo feito e adicionar a lista de Movimentações da conta.
      * 
      */
-    public void addMovimentation(Movimentation movimentation){
+    public void saveMovimentation(Movimentation movimentation){
         movimentations.add(movimentation);
     }
 }
