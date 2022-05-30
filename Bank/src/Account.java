@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public abstract class Account {
     private static int codigo = 0;
     private String nome;
@@ -9,14 +7,21 @@ public abstract class Account {
     private ArrayList<Movement> movementList;
     private Movement movement;
 
-    public Account(String nome, String email, boolean ativa) {
+    public Account(String nome, String email) {
         this.nome = nome;
         this.email = email;
-        this.ativa = ativa;
         movementList = new ArrayList<Movement>();
         movement = new Movement();
+    }    
+    
+    public String getNome(){
+        return nome;
     }
 
+    public int getCode(){
+        return codigo;
+    }
+    
     public void geradorCodigo() {
         codigo++;
     }

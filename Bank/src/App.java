@@ -1,16 +1,16 @@
 import java.util.Scanner;
+
 public class App {
+        
     public static void main(String[] args) {
 
         Boolean control = true;
 
         while (control) {
             String menuOption = showMenuAndGetOption();
-
             switch (menuOption) {
                 case "1":
                     break;
-
                 case "2":
                     break;
 

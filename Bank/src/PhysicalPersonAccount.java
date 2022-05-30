@@ -1,13 +1,13 @@
 public class PhysicalPersonAccount extends Account {
     private String cpf;
-    private double saldo;
+    private double saldo = 0;
 
-    public PhysicalPersonAccount(String nome, String email, Boolean ativa, String cpf, double saldo) {
-        super(nome, email, ativa);
+    public PhysicalPersonAccount(String nome, String email,  String cpf) {
+        super(nome, email);
         this.cpf = cpf;
-        this.saldo = saldo;
     }
-
+     
+    
     @Override
     public void deposito(double valor) {
 
